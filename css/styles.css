@@ -214,7 +214,8 @@ body {
     position: relative;
     float: left;
     padding-top: 30px;
-    margin-left: 7%
+    margin-left: 7%;
+    color: darkred;
 }
 
 .subDivNaamFoto img {
