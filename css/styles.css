@@ -214,13 +214,14 @@ body {
     position: relative;
     float: left;
     padding-top: 30px;
+    margin-left: 7%
 }
 
 .subDivNaamFoto img {
     width: 20%;
     position: relative;
     float: left;
-    margin-left: 20%;
+    margin-left: 13%;
 }
 
 #patienten-dossier_menu-item {
@@ -300,3 +301,19 @@ body {
     text-transform: uppercase;
 }
 
+/* return button */
+
+.return {
+    font-size: 50px;
+    color: darkblue;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f3f3f3;
+    width: 620px;
+}
+
+.return:active {
+    color: darkblue
+}
