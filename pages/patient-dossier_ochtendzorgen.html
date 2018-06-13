@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <h1 id="ochtendzorgTitel">Ochtendzorgen</h1>
+        <h2 id="ochtendzorgNaam">[Naam Patient]</h2>
+        <form action="patient-dossier_menu.html" id="ochtendzorgForm">
+            <ul>
+                <li>
+                    <h3>Hulp</h3>
+                    <li>
+                        <input type="radio" name="hulp" value="zelfstandig"  required> zelfstandig
+                    </li>
+                    <li>
+                        <input type="radio" name="hulp" id="geldeetelijke hulp" required> geldeetelijke hulp
+                    </li>
+                    <li>
+                        <input type="radio" name="hulp" id="volledige hulp" required> volledige hulp
+                    </li>
+                </li>
+                <li>
+                    <h3>toilet</h3>
+                    <li>
+                        <input type="radio" name="toilet" id="wast zichzelf" required> wast zichzelf
+                    </li>
+                    <li> 
+                        <input type="radio" name="toilet" id="aan de lavabo" required> aan de lavabo
+                    </li>
+                    <li>
+                        <input type="radio" name="toilet" id="bedbad" required> bedbad 
+                    </li>
+                </li>
+                <li>
+                    <h3>eten</h3>
+                    <li>
+                            <textarea name="eten" id="opmerkingen voedsel" cols="30" rows="5"></textarea>
+                    </li>
+                </li>
+                <li>
+                    <h3>urinaire uitscheiding</h3>
+                    <li>
+                        <input type="radio" name="urinaire_uitscheiding" id="toilet" required> toilet
+                    </li>
+                    <li> 
+                        <input type="radio" name="urinaire_uitscheiding" id="toiletstoel" required> toiletstoel
+                    </li>
+                    <li>
+                        <input type="radio" name="urinaire_uitscheiding" id="eenmalige urinesonde" required> eenmalige urinesonde 
+                        <li>
+                            <h5><input type="text" name="urinaire_uitscheiding" id="inhoud sonde">ml</h5>
+                        </li>
+                    </li>
+                    <li>
+                        <input type="radio" name="urinaire_uitscheiding" id="verblijfsonde" required> verblijfsonde 
+                    </li>
+                    <li>
+                        <input type="radio" name="urinaire_uitscheiding" id="incontinentie materiaal" required> incontinentie materiaal 
+                    </li>
+                </li>
+                <li>
+                    <h3>dorcale uitscheiding</h3>
+                    <li>
+                        <input type="radio" name="dorcale_uitscheiding" id="toilet" required> toilet
+                    </li>
+                    <li>
+                        <input type="radio" name="dorcale_uitscheiding" id="toiletstoel" required> toiletstoel 
+                    </li>
+                    <li>
+                        <input type="radio" name="dorcale_uitscheiding" id="incontinentie materiaal" required> incontinentie materiaal 
+                    </li>
+                </li>
+                <li>
+                    <h3>pijn</h3>
+                    <select name="pijn" required>
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                        <option value="1">6</option>
+                        <option value="1">7</option>
+                        <option value="1">9</option>
+                        <option value="1">8</option>
+                        <option value="1">9</option>
+                        <option value="1">10</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>emotionele toestand</h3>
+                    <li>
+                        <input type="radio" name="emotionele_toestand" id="onzeker" required> onzeker
+                    </li>
+                    <li>
+                        <input type="radio" name="emotionele_toestand" id="onrustig" required> onrustig 
+                    </li>
+                    <li>
+                        <input type="radio" name="emotionele_toestand" id="agressief" required> agressief 
+                    </li>
+                    <li>
+                        <input type="radio" name="emotionele_toestand" id="vrolijk" required> vrolijk 
+                    </li>
+                    <li>
+                        <input type="radio" name="emotionele_toestand" id="slaperig" required> slaperig 
+                    </li>
+                    <li>
+                        <input type="radio" name="emotionele_toestand" id="curieus" required> curieus 
+                    </li>
+                </li>
+                <li>
+                    <h3>verpleekundige reactie</h3>
+                    <li>
+                        <input type="radio" name="verpleekundige_reactie" id="informerend" required> informerend
+                    </li>
+                    <li>
+                        <input type="radio" name="verpleekundige_reactie" id="geruststellend" required> geruststellend 
+                    </li>
+                    <li>
+                        <input type="radio" name="verpleekundige_reactie" id="weigerd zorg" required> weigerd zorg 
+                    </li>
+                </li>
+                <li>
+                    <h3>infuus</h3>
+                    <li>
+                        <input type="radio" name="infuus" id="gezonde vene" required> gezonde vene
+                    </li>
+                    <li>
+                        <input type="radio" name="infuus" id="herprikt" required> herprikt 
+                    </li>
+                    <li>
+                        <input type="radio" name="infuus" id="verwijderd" required> verwijderd 
+                    </li>
+                </li>
+                <li>
+                    <h3><input type="checkbox" name="wonde_verzorgd" value="ja" required>wonde verzorgd</h3>
+                </li>
+                <li>
+                    <h3>opmerkingen</h3>
+                    <li>
+                        <textarea name="opmerkingen"  cols="30" rows="10"></textarea>
+                    </li>
+                </li>
+            </ul>
+            <button type="submit">opslaan</button>
+        </form>
+    </div>
+</body>
+</html>
