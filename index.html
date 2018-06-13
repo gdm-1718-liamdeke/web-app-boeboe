@@ -12,11 +12,28 @@
 </head>
 <body>
     <div class="mainDiv">
-        <form action="pages/menu1.html" id="loginForm">
-            <input type="text" name="username" placeholder="username" required>
-            <input type="password" name="password" placeholder="password" required>
-            <button type="submit">Log in</button>
+        <form action="#" name="loginForm" id="loginForm">
+            <input type="text" name="username" placeholder="username" id="username" required>
+            <input type="password" name="password" placeholder="password" id ="password" required>
+            <button type="submit" id="loginButton">Log in</button>
         </form>
     </div>
+    <script>
+        document.getElementById('loginButton').onclick = function() {
+            var usernameInput = document.getElementById('username').value;
+            var passwordInput = document.getElementById('password').value;
+
+            var username = "jokecool";
+            var password = "azerty123";
+
+            if(username === usernameInput && password === passwordInput) {
+                window.location.href = "pages/menu1.html"
+            } 
+            else {
+                alert("Verkeerde gebruikersnaam en/ of wachtwoord");
+            }
+            return false;
+        }
+    </script>
 </body>
 </html>
