@@ -317,3 +317,18 @@ body {
 .return:active {
     color: darkblue
 }
+
+/* face verification */
+
+#camera {
+    padding-top:50%;
+    display: block;
+    width: 175px;
+    margin: 0 auto;
+}
+
+#scanLink {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
