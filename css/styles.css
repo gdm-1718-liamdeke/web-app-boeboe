@@ -269,10 +269,11 @@ body {
 }
 
 #ochtendzorgForm button {
-    width: 15%;
+    width: 150px;
     display: block;
     margin: 10px auto 0 auto;
     font-size: 20px;
+    text-align: center;
 }
 
 /* medicatie */
