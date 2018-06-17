@@ -13,25 +13,41 @@
     <title>[App naam] - [Naam Patient] - Uitslagen</title>
 </head>
 <body>
+
+    <script>
+        function namePatient() {
+            $naam = sessionStorage.getItem("patientNaam");
+            if($naam != null) {
+                document.getElementById("ochtendzorgNaam").innerHTML = $naam;
+            }
+            console.log($naam);
+        }
+    </script>
+
+    <script src="../js/sessionstorageSet.js"></script>
     <div class="mainDiv">
         <a href="patient-dossier_menu.html" class="far fa-arrow-alt-circle-left return"></a>
-        <ul>
+        <h1 id="ochtendzorgTitel">Onderzoeken</h1>
+        <h2 id="ochtendzorgNaam">[Naam Patient]</h2>
+        <ul id="medicatie">
             <li>
                 <h3>labo uitslagen</h3>
-                <li>
-                    <h4>bloed</h4>
-                    <h4>urine</h4>
-                </li>
+                <ul>
+                    <h4><li>bloed</li></h4>
+                    <h4><li>urine</li></h4>
+                </ul>
             </li>
             <li>
                 <h3>beeldmateriaal</h3>
-                <li>
-                    <h4>RX</h4>
-                    <h4>MRI</h4>
-                    <h4>CT</h4>
-                </li>
+                <ul>
+                    <h4><li>RX</li></h4>
+                    <h4><li>MRI</li></h4>
+                    <h4><li>CT</li></h4>
+                </ul> 
             </li>
         </ul>
     </div>
+    
+
 </body>
 </html>

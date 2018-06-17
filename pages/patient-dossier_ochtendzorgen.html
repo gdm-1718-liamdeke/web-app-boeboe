@@ -16,7 +16,7 @@
     <div class="mainDiv">
         <a href="patient-dossier_menu.html" class="far fa-arrow-alt-circle-left return"></a>
         <h1 id="ochtendzorgTitel">Ochtendzorgen</h1>
-        <h2 id="ochtendzorgNaam">[Naam Patient]</h2>
+        <h2 id="ochtendzorgNaam" id="naamPatient">[Naam Patient]</h2>
         <form action="patient-dossier_menu.html" id="ochtendzorgForm">
             <ul>
                 <li>
@@ -159,5 +159,14 @@
             <button type="submit">opslaan</button>
         </form>
     </div>
+    <script>
+        function namePatient() {
+            $naam = sessionStorage.getItem("patientNaam");
+            if($naam != null) {
+                document.getElementById("naamPatient").innerHTML = $naam ;
+            }
+            console.log($naam);
+        }
+    </script>
 </body>
 </html>

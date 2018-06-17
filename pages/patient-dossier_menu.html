@@ -18,8 +18,8 @@
     <div class="mainDiv">
         <a href="patienten_menu.html" class="far fa-arrow-alt-circle-left return"></a>
         <div class="subDivNaamFoto">
-            <h2>[Naam Patient]</h2>
-            <img src="../images/16480.svg" alt="">
+            <h2 id="naamPatient">[Naam Patient]</h2>
+            <img src="../images/16480.svg" alt="" id="picPatient">
         </div>
         <ul>
             <li class="menu_listitem" id="patienten-dossier_menu-item">
@@ -42,16 +42,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
     <script>
-      function openColorBox(){
+        function openColorBox(){
+            /** random popup message **/
             $links = ["popup.html", "popup1.html", "popup2.html"]
             $randomNumber = parseInt(Math.random()*3);
             console.log($randomNumber);
             console.log($links)
+            
+            /** set patient name **/
+            $naam = sessionStorage.getItem("patientNaam");
+            if($naam != null) {
+                document.getElementById("naamPatient").innerHTML = $naam ;
+            }
+            console.log($naam);
 
-        $.colorbox({iframe:true, width:"80%", height:"80%", href: $links[$randomNumber]});
-      }
-      
-      setTimeout(openColorBox, 10);
+            /** set patient picture **/
+            $picture = sessionStorage.getItem("patientPicture");
+            document.getElementById("picPatient").src = $picture;
+            console.log($picture);
+
+            $.colorbox({iframe:true, width:"80%", height:"80%", href: $links[$randomNumber]});
+        } 
+
+    setTimeout(openColorBox, 10);
+            
+
     </script>
 </body>
 </html>
