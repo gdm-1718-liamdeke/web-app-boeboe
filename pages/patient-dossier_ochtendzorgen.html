@@ -159,14 +159,6 @@
             <button type="submit">opslaan</button>
         </form>
     </div>
-    <script>
-        function namePatient() {
-            $naam = sessionStorage.getItem("patientNaam");
-            if($naam != null) {
-                document.getElementById("naamPatient").innerHTML = $naam ;
-            }
-            console.log($naam);
-        }
-    </script>
+    <script src="../js/sessionstorageSet.js"></script>
 </body>
 </html>
